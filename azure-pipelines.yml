@@ -9,6 +9,6 @@ steps:
 
 - script: |
     npm install
-    rimraf dist/*
+    npm install -global cross-env
     npm run clean && npm run build:browser && npm run build:node
   displayName: 'build and test'
